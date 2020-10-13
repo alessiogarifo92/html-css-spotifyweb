@@ -9,17 +9,56 @@ main{
   height: calc(100vh - 100px);
 }
 
+
+
 #barra-laterale{
   background-color: grey;
   width: 250px;
+  height: calc(100vh - 100px);
 }
 
+
+
 #mainblock{
-  background-color: black;
   width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+#upgrade{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100px;
+  width: calc(100vw - 250px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#upgrade > a{
+  align-self: center;
+  color: white;
+  font-size: 13px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#upgrade > a:hover{
+  font-size: 15px;
+}
+
+.fixed{
+  position: fixed;
+}
+
+#albums{
+  background-color: #222326;
+  overflow: auto;
+  /* debub */
+  height: 1000px;
 }
 
 footer{
   background-color: green;
   height: 100px;
+  width: 100%;
 }
