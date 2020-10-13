@@ -110,8 +110,8 @@ font-size: 15px;
 }
 
 #mainblock{
-  width: calc(100% - 250px);
-  margin-left: 250px;
+  width: calc(100% - 230px);
+  margin-left: 230px;
 }
 
 #upgrade{
@@ -162,16 +162,26 @@ footer{
 
   #mobile-laterale{
     background-color: black;
-    width: 70px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #profilo-small{
+    background-color: grey;
+    padding: 3px;
+    border-radius: 15px;
   }
 
   #mainblock{
-    width: calc(100% - 70px);
+    width: calc(100% - 40px);
     margin-left: 0;
   }
 
   #upgrade{
-    width: calc(100vw - 70px);
+    width: calc(100vw - 40px);
   }
 
   #albums{
