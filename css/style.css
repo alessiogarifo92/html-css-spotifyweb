@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main{
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+#barra-laterale{
+  background-color: grey;
+  width: 250px;
+}
+
+#mainblock{
+  background-color: black;
+  width: calc(100% - 250px);
+}
+
+footer{
+  background-color: green;
+  height: 100px;
+}
