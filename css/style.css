@@ -60,8 +60,11 @@ h4{
   margin-bottom: 10px;
 }
 
+/* per far funzionare overflow inserito a gianni che è il container principale e inserito min-heigt auto con overflow auto, errore averlo dato a nuove playlist che sono dentro contenitore gianni */
 #gianni{
   flex-grow: 1;
+  min-height: auto;
+  overflow: auto;
 }
 
 #no-effect a:hover{
@@ -79,19 +82,17 @@ bottom:5px;
 left: 5px;
 }
 
-#nuove-playlist{
+#nuove-playlist {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-height: 200px;
-  overflow-y: auto;
   margin-top: 10px;
 }
 
 #download{
   display: flex;
   align-items: center;
-  width: 100px;
+  width: 100%;
 }
 
 #download > span{
@@ -202,7 +203,7 @@ h3{
 #recently-played > div{
   position: relative;
 }
-
+/* info sbagliate per cui non funzionava hover correttamente */
 /* .play-album-old-sbagliato > img{
   position: absolute;
   background-color: red;
@@ -215,7 +216,7 @@ h3{
   display: none;
   opacity: 0;
 } */
-
+/* rimedio errore e impostate info per far avvenire hover albums-inizio */
 .container-image {
   position: relative;
 }
@@ -243,8 +244,8 @@ h3{
 .container-image:hover .play-album {
   display: flex;
 }
+/* rimedio errore e impostate info per far avvenire hover albums-fine */
 
-/* effetto hover play album */
 #creato-per,
 #artisti-popolari{
   display: flex;
