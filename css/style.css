@@ -197,19 +197,27 @@ h3{
 #recently-played div,
 #recently-played > div > img{
   width: 150px;
+}
+
+#recently-played div{
   position: relative;
 }
 
-.play-album img{
+.play-album > img{
+  position: absolute;
+  width: 100px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -27%);
+  transition: 1s background;
   display: none;
 }
 
-.play-album img:hover{
+/* effetto hover play album */
+.play-album > img:hover{
   display: block;
-  position:absolute;
-  width: 150px;
+  background: rgba(0, 0, 0, 0.3);
 }
-
 
 #creato-per,
 #artisti-popolari{
