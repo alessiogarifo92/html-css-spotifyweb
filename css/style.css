@@ -9,10 +9,6 @@ main{
   height: calc(100vh - 60px);
 }
 
-div,nav{
-  border: 1px solid red;
-}
-
 #barra-laterale{
   background-color: black;
   width: 250px;
@@ -61,7 +57,7 @@ li > a > span{
 
 h4{
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #gianni{
@@ -164,6 +160,7 @@ font-size: 15px;
 #albums{
   background-color: #222326;
   overflow: auto;
+  color: grey;
   /* debub */
   height: calc(100vh - 60px);
   padding-top: 60px;
@@ -177,9 +174,54 @@ font-size: 15px;
 }
 
 #nav-albums a:hover {
-    color: white;
-    border-bottom: 3px solid green;
-    padding-bottom: 5px;
+  color: white;
+  border-bottom: 3px solid green;
+  padding-bottom: 5px;
+}
+
+h3{
+  color: white;
+  margin: 10px auto;
+}
+
+#recently-played{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  min-height: 200px;
+  padding-top: 15px;
+}
+
+#recently-played div,
+#recently-played img{
+  width: 150px;
+}
+
+#creato-per,
+#artisti-popolari{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: baseline;
+  min-height: 200px;
+  padding-top: 15px;
+}
+
+#creato-per img{
+  width: 150px;
+}
+
+#artisti-popolari img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+#creato-per div,
+#artisti-popolari div{
+  margin: 0 15px;
 }
 
 /* prova media query */
@@ -195,7 +237,7 @@ font-size: 15px;
 }
 
 footer{
-  background-color: green;
+  background-color: #282828;
   height: 60px;
   width: 100%;
   display: flex;
@@ -231,10 +273,23 @@ h5{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 5px;
 }
 
 #middle-foot i{
   padding: 0 10px;
+  font-size: 15px;
+
+}
+
+#buttons-player{
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#fa-play-circle:hover{
+  font-size: 20px;
 }
 
 #media-player{
@@ -243,7 +298,7 @@ h5{
   align-items: center;
   color: white;
   font-size: 10px;
-  margin-top: 12px;
+  margin-top: 5px;
 }
 
 #linea-play{
