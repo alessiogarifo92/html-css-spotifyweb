@@ -199,26 +199,52 @@ h3{
   width: 150px;
 }
 
-#recently-played div{
+#recently-played > div{
   position: relative;
 }
 
-.play-album > img{
+/* .play-album-old-sbagliato > img{
   position: absolute;
-  width: 100px;
+  background-color: red;
+  width: 150px;
+  height: 150px;
   bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -27%);
-  transition: 1s background;
+  left: 50%;;
+  transform: translate(-50%, -3%);
+  transition: 1s opacity;
   display: none;
+  opacity: 0;
+} */
+
+.container-image {
+  position: relative;
+}
+
+.container-image > img {
+  width: 150px;
+}
+
+.play-album {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-album > img {
+  width: 40px;
+}
+
+.container-image:hover .play-album {
+  display: flex;
 }
 
 /* effetto hover play album */
-.play-album > img:hover{
-  display: block;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 #creato-per,
 #artisti-popolari{
   display: flex;
@@ -230,17 +256,17 @@ h3{
   padding-top: 15px;
 }
 
-#creato-per img{
+.img-radius{
   width: 150px;
 }
 
-#artisti-popolari img{
-  width: 150px;
+.img-radius > img{
   border-radius: 50%;
+  width: 150px;
 }
 
-#creato-per div,
-#artisti-popolari div{
+#creato-per > div,
+#artisti-popolari > div{
   margin: 0 15px;
 }
 
@@ -272,8 +298,8 @@ footer i{
 
 #left-foot,
 #right-foot{
-  width: 15%;
-  padding-left: 30px;
+  width: 18%;
+  padding-left: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
