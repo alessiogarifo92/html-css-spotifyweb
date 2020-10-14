@@ -195,9 +195,21 @@ h3{
 }
 
 #recently-played div,
-#recently-played img{
+#recently-played > div > img{
+  width: 150px;
+  position: relative;
+}
+
+.play-album img{
+  display: none;
+}
+
+.play-album img:hover{
+  display: block;
+  position:absolute;
   width: 150px;
 }
+
 
 #creato-per,
 #artisti-popolari{
@@ -252,7 +264,7 @@ footer i{
 
 #left-foot,
 #right-foot{
-  width: 250px;
+  width: 15%;
   padding-left: 30px;
   display: flex;
   justify-content: space-around;
@@ -268,7 +280,7 @@ h5{
 }
 
 #middle-foot{
-  width: 500px;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
