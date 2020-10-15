@@ -237,11 +237,29 @@ h3{
   align-items: center;
 }
 
+.play-album-radius {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
 .play-album > img {
   width: 40px;
 }
 
-.container-image:hover .play-album {
+.play-album-radius > img {
+  width: 40px;
+}
+
+.container-image:hover .play-album,
+ .container-image:hover .play-album-radius{
   display: flex;
 }
 /* rimedio errore e impostate info per far avvenire hover albums-fine */
