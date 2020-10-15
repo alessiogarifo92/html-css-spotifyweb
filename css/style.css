@@ -514,6 +514,24 @@ h5{
   #nav-albums > ul > li{
     width: calc(100% / 3);
   }
+
+  #left-foot,
+  #right-foot{
+    width: 24%;
+  }
+
+  #middle-foot{
+    width: 43%;
+  }
+
+  #linea-play{
+    width: 180px;
+  }
+
+  #aggiungi{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* media query versione s */
@@ -528,6 +546,24 @@ h5{
 
   #nav-albums > ul > li{
     width: calc(100% / 3);
+  }
+
+  #left-foot,
+  #right-foot{
+    width: 24%;
+  }
+
+  #middle-foot{
+    width: 43%;
+  }
+
+  #linea-play{
+    width: 240px;
+  }
+
+  #aggiungi{
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -544,6 +580,19 @@ h5{
   #nav-albums > ul > li{
     width: calc(100% / 5);
   }
+
+  #left-foot,
+  #right-foot{
+    width: 24%;
+  }
+
+  #middle-foot{
+    width: 43%;
+  }
+
+  #linea-play{
+    width: 240px;
+  }
 }
 
 /* media query lg */
@@ -554,5 +603,10 @@ h5{
 
   #recently-played{
     justify-content: flex-start;
+  }
+
+  #left-foot,
+  #right-foot{
+    width: 22%;
   }
 }
