@@ -195,17 +195,21 @@ font-size: 15px;
 
 h3{
   color: white;
-  margin: 10px auto;
+  margin: 10px 0 0 15px;
+}
+
+#albums > p{
+  margin-left: 15px;
 }
 
 #recently-played{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   min-height: 200px;
-  padding-top: 15px;
+  padding: 15px 10px 0;
 }
 
 #recently-played div,
@@ -517,7 +521,13 @@ h5{
 
   #left-foot,
   #right-foot{
-    width: 24%;
+    width: 26%;
+  }
+
+  .fa-list-ul,
+  .fa-laptop,
+  .fa-volume-up{
+    font-size: 12px;
   }
 
   #middle-foot{
