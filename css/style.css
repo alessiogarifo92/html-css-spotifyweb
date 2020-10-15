@@ -138,6 +138,7 @@ font-size: 15px;
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  z-index: 600;
 }
 
 #upgrade > a{
@@ -178,6 +179,18 @@ font-size: 15px;
   color: white;
   border-bottom: 3px solid green;
   padding-bottom: 5px;
+}
+
+#nav-albums > ul{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nav-albums > ul > li{
+  flex-shrink: 0;
+  padding: 0 10px;
 }
 
 h3{
@@ -289,17 +302,10 @@ h3{
   margin: 0 15px;
 }
 
-/* prova media query */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-#nav-albums{
-  text-align: center;
-}
-}
-
-#nav-albums > ul > li{
+/* #nav-albums > ul > li{
   float: left;
   margin-right: 15px;
-}
+} */
 
 footer{
   background-color: #282828;
@@ -308,6 +314,7 @@ footer{
   display: flex;
   justify-content:space-between;
   align-items: center;
+  z-index: 990;
 }
 
 footer a,
@@ -457,7 +464,7 @@ h5{
   display: block;
 }
 
-/* media query mobile */
+/* media query mobile xs */
 @media screen and (max-width: 576px){
   #barra-laterale{
     display: none;
@@ -494,5 +501,58 @@ h5{
     /* debub */
     height: calc(100vh - 60px);
     width: 100%;
+  }
+
+  #recently-played > div{
+    width: calc(100% / 2);
+  }
+
+  #recently-played{
+    justify-content: flex-start;
+  }
+
+  #nav-albums > ul > li{
+    width: calc(100% / 3);
+  }
+}
+
+/* media query versione s */
+@media screen and (min-width: 577px) and (max-width: 768px){
+  #recently-played > div{
+    width: calc(100% / 2);
+  }
+
+  #recently-played{
+    justify-content: flex-start;
+  }
+
+  #nav-albums > ul > li{
+    width: calc(100% / 3);
+  }
+}
+
+/* media query versione md */
+@media all and (min-width: 769px) and (max-width: 860px){
+  #recently-played > div{
+    width: calc(100% / 2);
+  }
+
+  #recently-played{
+    justify-content: flex-start;
+  }
+
+  #nav-albums > ul > li{
+    width: calc(100% / 5);
+  }
+}
+
+/* media query lg */
+@media screen and (min-width: 861px) and (max-width: 1200px){
+  #recently-played > div{
+    width: calc(100% / 4);
+  }
+
+  #recently-played{
+    justify-content: flex-start;
   }
 }
